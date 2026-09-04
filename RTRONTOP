@@ -101,7 +101,7 @@ BtnCorner.CornerRadius = UDim.new(0, 8)
 BtnCorner.Parent = ToggleButton
 
 local isEnabled = false
-local flySpeed = 60
+local flySpeed = 70
 local currentVelocity = Vector3.zero
 local lastRagdollTick = 0
 
@@ -109,7 +109,7 @@ local function updateFlyState(state)
     isEnabled = state
     
     if isEnabled then
-        ToggleButton.Text = "Fly: ON"
+        ToggleButton.Text = "Fly:ON"
         ToggleButton.BackgroundColor3 = Color3.fromRGB(40, 165, 65)
 
         triggerRagdoll()
@@ -204,7 +204,7 @@ local function updateFlyState(state)
 
         triggerRagdoll()
 
-        ToggleButton.Text = "Fly: OFF"
+        ToggleButton.Text = "Fly:OFF"
         ToggleButton.BackgroundColor3 = Color3.fromRGB(195, 40, 40)
     end
 end
